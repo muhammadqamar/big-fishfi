@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Button,
-  Container,
-  Heading,
-  Text,
-  Image,
-  Flex,
-} from "@chakra-ui/react";
+import { Box, Heading, Text, Image, Flex } from "@chakra-ui/react";
 const card = [
   {
     img: "/icon/card_layer.svg",
@@ -22,17 +14,13 @@ const card = [
   {
     img: "/icon/card_layer.svg",
     heading: "$swim token",
-    para: "SWIM has a total quantity of 300,000,000 tokens, and its circulation supply is intended to lie precisely in the middle of that of the two tokens that came before it.The token is also a Governance token, which means that members of the #ShoalSociety who HODL it will be able to vote on upcoming proposals on our Neptune DAO.",
+    para: "SWIM has a total quantity of 300,000,000 tokens, and its circulation supply is intended to lie precisely in the middle of that of the two tokens that came before it. The token is also a Governance token, which means that members of the #ShoalSociety who HODL it will be able to vote on upcoming proposals on our Neptune DAO.",
   },
 ];
 const Tokens = () => {
   return (
     <Box w="100%">
-      <Box
-        maxW="1440px"
-        p={{ base: "25px 20px", md: "20px 30px", xl: "20px  140px" }}
-        m="auto"
-      >
+      <Box maxW="1440px" p={{ base: "25px 20px", md: "20px 30px", xl: "20px  140px" }} m="auto">
         <Heading
           maxW="494px"
           fontSize="30px"
@@ -47,7 +35,7 @@ const Tokens = () => {
           flexDirection={{ base: "column", lg: "inherit" }}
           mt={{ base: "inherit", lg: "50px" }}
         >
-          {card.map((item, count) => (
+          {card.map((item, index, count) => (
             <Box
               w={{ base: "100%", lg: "367px" }}
               minH={{ base: "428px", lg: "549px" }}
@@ -57,7 +45,6 @@ const Tokens = () => {
               borderRadius="20px"
               bg="#2F265B"
               mt={{ base: "50px", lg: "0" }}
-              mr={{ base: "0", lg: "10px" }}
               key={count}
             >
               <Flex
@@ -78,14 +65,14 @@ const Tokens = () => {
                   {item.heading}
                 </Heading>
               </Flex>
+
               <Text
-                maxW={{ base: "100%", lg: "315px" }}
-                minH={{ base: "288px", lg: "378px" }}
+                w="100%"
                 fontSize="18px"
                 lineHeight="27px"
                 fontWeight="400"
+                p="30px 19px 34px 30px"
                 color="rgba(212, 210, 232, 1)"
-                p="30px 21px 0px 31px"
                 textAlign="left"
               >
                 {item.para}

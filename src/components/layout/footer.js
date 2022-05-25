@@ -7,26 +7,51 @@ const Footer = () => {
     <Box
       w="100%"
       minH={{ base: "586px", lg: "500.63px" }}
-      bgImage={"/icon/footer_bgImg.svg"}
+      bgImage={"/footer-bg.svg"}
       bgRepeat="no-repeat"
-      bgPosition="center"
-      bgSize="cover"
+      bgPosition={{ base: "bottom", xl: "top" }}
+      bgSize="contain"
+      pos={{ base: "inherit", xl: "relative" }}
     >
       <Box
+        w="100%"
+        h="277px"
+        top="158px"
+        bgImage="url(fot-bg-3.svg)"
+        bgPosition="center"
+        bgSize="cover"
+        bgRepeat="no-repeat"
+        pos="absolute"
+        display={{ base: "none", xl: "block" }}
+      />
+      <Box
+        w="100%"
+        h="180px"
+        bottom="0"
+        bgImage="url(fot-bg-2.svg)"
+        bgPosition="center"
+        bgSize="cover"
+        bgRepeat="no-repeat"
+        pos="absolute"
+        display={{ base: "none", xl: "block" }}
+      />
+      <Box
+        w="100%"
+        pos={{ base: "inherit", xl: "absolute" }}
         p={{
           base: "25px 20px",
-          md: "20px 30px",
-          xl: "20px  140px",
+          md: "0  30px  32px",
+          xl: "289px  140px  0",
         }}
       >
         <Container
           maxW="1440px"
-          p="0"
           display="flex"
-          flexDirection={{ base: "column", lg: "row" }}
-          alignItems={{ base: "flex-start", lg: "center" }}
+          flexDirection={{ base: "column", md: "row" }}
+          alignItems={{ base: "flex-start", md: "center" }}
           justifyContent="space-between"
           flexWrap="wrap"
+          p="0"
         >
           <Image
             width={{ base: "208px", sm: "141px" }}
@@ -71,7 +96,7 @@ const Footer = () => {
           <Flex
             maxW="330px"
             justifyContent="space-between"
-            m={{ base: "51px 0 46px 0", lg: "48px auto 43px" }}
+            m={{ base: "51px 0 46px 0", md: "30px auto 40px" }}
           >
             <Image w="34px" h="34px" src="/icon/twitter.svg" alt="twitter" />
             <Image w="34px" h="34px" src="/icon/telegram.svg" alt="telegram" />
@@ -85,7 +110,7 @@ const Footer = () => {
             fontSize="14px"
             lineHeight="22px"
             letterSpacing="0.02em"
-            m={{ base: "0", lg: "auto" }}
+            m={{ base: "0 auto 45px", lg: "0 auto 32px" }}
             textAlign="center"
           >
             Copyright © 2022 All rights reserved | Privacy

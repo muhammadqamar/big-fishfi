@@ -2,18 +2,17 @@ import BigfishfiBack from "./bigfishfiBack";
 import HeroSection from "./heroSection";
 import MegaloSwap from "./megaloSwap";
 import Tokens from "./tokens";
-import { Box } from "@chakra-ui/react";
 import Ecosystem from "./ecosystem";
 import Purchase from "./purchase";
 const Index = () => {
   return (
     <>
       <HeroSection />
+      <Ecosystem />
       <Tokens />
+      <Purchase />
       <MegaloSwap />
       <BigfishfiBack />
-      <Ecosystem />
-      <Purchase />
     </>
   );
 };

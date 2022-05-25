@@ -6,7 +6,7 @@ import { startedData } from "../dummyData";
 
 const Purchase = () => {
   return (
-    <Box w="100%" h="2346px" pos="relative">
+    <Box w="100%" minH="2346px" pos="relative" mb={{ base: "480px", md: "0" }}>
       <Box
         w="100%"
         h="646px"
@@ -19,7 +19,7 @@ const Purchase = () => {
       />
       <Box
         w="100%"
-        h="2090px"
+        h={{ base: "2515px", md: "2090px" }}
         top="256px"
         bgImage="url(wave-to-s-bg.svg)"
         bgPosition="center"
