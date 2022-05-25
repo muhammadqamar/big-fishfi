@@ -23,8 +23,8 @@ const StartedCard = ({ data, index }) => {
       pos={{ base: "inherit", lg: "absolute" }}
       mb={{ base: "20px", lg: "0" }}
     >
-      <Box w="350px">
-        <Flex justify="space-between" align="center" mb="10px">
+      <Box w={{ base: "285px", lg: "350px" }} p={{ base: "10px", lg: "0" }}>
+        <Flex justify="space-between" align="center" mb={{ base: "6px", lg: "10px" }}>
           <Box
             flexShrink="0"
             fontWeight="700"
@@ -36,7 +36,7 @@ const StartedCard = ({ data, index }) => {
             {data.id}
           </Box>
           <Text
-            ml={{ base: "15px", md: "20px" }}
+            ml={{ base: "15px", lg: "20px" }}
             className="sub-heading-two"
             lineHeight="140%"
             fontSize={{ base: "18px", lg: "20px" }}
@@ -45,7 +45,12 @@ const StartedCard = ({ data, index }) => {
             {data.title}
           </Text>
         </Flex>
-        <Text className="para-text" fontSize={{ base: "14px", lg: "18px" }} color="#D4D2E8">
+        <Text
+          className="para-text"
+          fontSize={{ base: "14px", lg: "18px" }}
+          color="#D4D2E8"
+          pl={{ base: "27px", lg: "0" }}
+        >
           {data.about}
         </Text>
       </Box>
