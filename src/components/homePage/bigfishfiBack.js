@@ -6,6 +6,7 @@ const BigfishfiBack = () => {
       <Box
         maxW="1440px"
         p={{ base: "25px 20px", md: "20px 30px", xl: "0 239px 26.82px 140px" }}
+        m="auto"
       >
         <Flex
           justifyContent="space-between"

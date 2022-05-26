@@ -6,6 +6,7 @@ const MegaloSwap = () => {
       <Box
         maxW="1440px"
         p={{ base: "25px 20px", md: "20px 30px", xl: "20px  140px" }}
+        m="auto"
       >
         <Flex
           alignItems="center"
