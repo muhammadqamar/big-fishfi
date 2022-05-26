@@ -25,11 +25,7 @@ const Tokens = () => {
       p={{ base: "25px 20px", md: "20px 30px", xl: "20px  140px" }}
       m="auto"
     >
-      <Text
-        maxW="494px"
-        className="sub-heading-one"
-        color="rgba(255, 255, 255, 1)"
-      >
+      <Text maxW="494px" className="sub-heading-one" color="rgba(255, 255, 255, 1)">
         What Are The Available Tokens?
       </Text>
       <Flex
@@ -39,17 +35,27 @@ const Tokens = () => {
       >
         {card.map((item, index, count) => (
           <Box
-            w={{ base: "100%", lg: "367px" }}
-            minH={{ base: "428px", lg: "549px" }}
-            border="1px solid"
-            border-image-source="linear-gradient(180deg, #FFFFFF 0%, #151840 100%)"
-            border-image-slice="1"
+            w={{ base: "100%", lg: "365px" }}
+            minH={{ base: "426px", lg: "547px" }}
             borderRadius="20px"
             bg="#2F265B"
+            className="border-color"
             mt={{ base: "50px", lg: "0" }}
             ml={{ base: index === 1 && "0", lg: index === 1 && "14px" }}
             mr={{ base: index === 1 && "0", lg: index === 1 && "14px" }}
             key={count}
+            pos="relative"
+            _before={{
+              content: `''`,
+              zIndex: "-1",
+              borderRadius: "20px",
+              pos: "absolute",
+              top: "-1px",
+              left: "-1px",
+              w: { base: "100%", lg: "367px" },
+              minH: { base: "428px", lg: "549px" },
+              bg: "Linear-Gradient( rgba(255, 255, 255, 1), rgba(21, 24, 64, 1))",
+            }}
           >
             <Flex
               width="100%"
