@@ -96,17 +96,6 @@ body {
   }
 }
 
-/*fishfi_Section*/
-.fishBack_para {
-  font-size: 18px;
-  line-height: 28.8px;
-  font-weight: 400;
-  color: rgba(212, 210, 232, 1);
-  margin-bottom: 20px;
-}
-.fisfi_para {
-  margin-bottom: 0;
-}
 .info-text {
   font-weight: 400;
   font-size: 16px;
@@ -138,12 +127,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background: linear-gradient(
-    234.39deg,
-    #ecd792 -24.67%,
-    #eec867 47.71%,
-    #daad42 97.67%
-  );
+  background: linear-gradient(234.39deg, #ecd792 -24.67%, #eec867 47.71%, #daad42 97.67%);
   /* gold */
 
   box-shadow: 0px 15px 35px rgba(232, 208, 136, 0.2);

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading, Text, Image, Flex } from "@chakra-ui/react";
+import { Box, Text, Image, Flex } from "@chakra-ui/react";
 const card = [
   {
     img: "/icon/card_layer.svg",
@@ -19,68 +19,57 @@ const card = [
 ];
 const Tokens = () => {
   return (
-    <Box w="100%">
-      <Box maxW="1440px" p={{ base: "25px 20px", md: "20px 30px", xl: "20px  140px" }} m="auto">
-        <Heading
-          maxW="494px"
-          fontSize="30px"
-          lineHeight="42px"
-          fontWeight="700"
-          color="rgba(255, 255, 255, 1)"
-        >
-          What Are The Available Tokens?
-        </Heading>
-        <Flex
-          justifyContent="space-between"
-          flexDirection={{ base: "column", lg: "inherit" }}
-          mt={{ base: "inherit", lg: "50px" }}
-        >
-          {card.map((item, index, count) => (
-            <Box
-              w={{ base: "100%", lg: "367px" }}
-              minH={{ base: "428px", lg: "549px" }}
-              border="1px solid"
-              border-image-source="linear-gradient(180deg, #FFFFFF 0%, #151840 100%)"
-              border-image-slice="1"
+    <Box maxW="1440px" p={{ base: "25px 20px", md: "20px 30px", xl: "20px  140px" }} m="auto">
+      <Text maxW="494px" className="sub-heading-one" color="rgba(255, 255, 255, 1)">
+        What Are The Available Tokens?
+      </Text>
+      <Flex
+        justifyContent="space-between"
+        flexDirection={{ base: "column", lg: "inherit" }}
+        mt={{ base: "inherit", lg: "50px" }}
+      >
+        {card.map((item, count) => (
+          <Box
+            w={{ base: "100%", lg: "367px" }}
+            minH={{ base: "428px", lg: "549px" }}
+            border="1px solid"
+            border-image-source="linear-gradient(180deg, #FFFFFF 0%, #151840 100%)"
+            border-image-slice="1"
+            borderRadius="20px"
+            bg="#2F265B"
+            mt={{ base: "50px", lg: "0" }}
+            key={count}
+          >
+            <Flex
+              width="100%"
+              alignItems="center"
               borderRadius="20px"
-              bg="#2F265B"
-              mt={{ base: "50px", lg: "0" }}
-              key={count}
+              bg="rgba(255, 255, 255, 0.1)"
+              p={{ base: "11px 27px", lg: "11px 0 11px 27px" }}
             >
-              <Flex
-                width="100%"
-                alignItems="center"
-                borderRadius="20px"
-                bg="rgba(255, 255, 255, 0.1)"
-                p={{ base: "11px 27px", lg: "11px 0 11px 27px" }}
-              >
-                <Image w="58px" h="58px" src={item.img} alt="card_img" />
-                <Heading
-                  fontSize="20px"
-                  lineHeight="28px"
-                  fontWeight="700"
-                  color="#fff"
-                  textTransform="uppercase"
-                >
-                  {item.heading}
-                </Heading>
-              </Flex>
-
+              <Image w="58px" h="58px" src={item.img} alt="card_img" />
               <Text
-                w="100%"
-                fontSize="18px"
-                lineHeight="27px"
-                fontWeight="400"
-                p="30px 19px 34px 30px"
-                color="rgba(212, 210, 232, 1)"
-                textAlign="left"
+                className="sub-heading-two"
+                lineHeight="140%"
+                color="#fff"
+                textTransform="uppercase"
               >
-                {item.para}
+                {item.heading}
               </Text>
-            </Box>
-          ))}
-        </Flex>
-      </Box>
+            </Flex>
+
+            <Text
+              w="100%"
+              className="para-text "
+              p="30px 19px 34px 30px"
+              color="rgba(212, 210, 232, 1)"
+              textAlign="left"
+            >
+              {item.para}
+            </Text>
+          </Box>
+        ))}
+      </Flex>
     </Box>
   );
 };

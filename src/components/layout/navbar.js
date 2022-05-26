@@ -13,16 +13,8 @@ const Navbar = () => {
         alignItems="center"
         justifyContent="space-between"
       >
-        <Image
-          width={{ base: "208px", sm: "141px" }}
-          src="/icon/nav_logo.svg"
-          alt="logo"
-        />
-        <Flex
-          display={{ base: "none", lg: "inherit" }}
-          minW="625px"
-          justifyContent="space-between"
-        >
+        <Image width={{ base: "208px", sm: "141px" }} src="/icon/nav_logo.svg" alt="logo" />
+        <Flex display={{ base: "none", lg: "inherit" }} minW="625px" justifyContent="space-between">
           <Link href="/About">
             <a className="nav_link">About</a>
           </Link>
@@ -38,7 +30,7 @@ const Navbar = () => {
         </Flex>
         <Button
           display={{ base: "none", lg: "inherit" }}
-          W="153px"
+          w="153px"
           fontSize="20px"
           fontWeight="700"
           bg="#fff"

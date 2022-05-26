@@ -9,7 +9,7 @@ const Footer = () => {
       minH={{ base: "586px", lg: "500.63px" }}
       bgImage={"/footer-bg.svg"}
       bgRepeat="no-repeat"
-      bgPosition={{ base: "bottom", xl: "top" }}
+      bgPosition={{ base: "bottom", xl: "center 22px" }}
       bgSize="contain"
       pos={{ base: "inherit", xl: "relative" }}
     >
@@ -78,7 +78,7 @@ const Footer = () => {
             </Link>
           </Flex>
           <Button
-            W="153px"
+            w="153px"
             fontSize="20px"
             fontWeight="700"
             bg="#fff"

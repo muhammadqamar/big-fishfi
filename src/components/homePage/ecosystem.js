@@ -2,7 +2,13 @@ import { Box, Container, Flex, Text, Img, Button } from "@chakra-ui/react";
 
 const Ecosystem = () => {
   return (
-    <Box w="100%" h={{ base: "1000px", lg: "680px" }} bg="#0008BF" pos="relative">
+    <Box
+      w="100%"
+      h={{ base: "1000px", lg: "680px" }}
+      bg="#0008BF"
+      pos="relative"
+      mb={{ base: "70px", md: "130px" }}
+    >
       <Box
         w="100%"
         h="100%"
