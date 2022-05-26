@@ -1,18 +1,18 @@
 import React from "react";
-import { Box, Heading, Text, Image, Flex } from "@chakra-ui/react";
+import { Box, Text, Img, Flex } from "@chakra-ui/react";
 const MegaloSwap = () => {
   return (
     <Box
       maxW="1440px"
       p={{ base: "25px 20px", md: "20px 30px", xl: "20px  140px" }}
-      m="140px auto 144px"
+      m="57px auto 144px"
     >
       <Flex
         alignItems="center"
         justifyContent="space-between"
         flexDirection={{ base: "column-reverse", lg: "inherit" }}
       >
-        <Image w="445.38px" h="290.42px" src="/icon/megalo_img.svg" alt="megaloFish_logo" />
+        <Img w="474.38px" h="500px" src="/icon/megalo_img.svg" alt="megaloFish_logo" />
         <Box maxW="565px">
           <Text className="sub-heading-one" color="#fff" mb="30px">
             What is MegaloSwap?
