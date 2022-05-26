@@ -9,7 +9,6 @@ import {
   DrawerBody,
   Flex,
   Image,
-  Box,
   Text,
 } from "@chakra-ui/react";
 import Link from "next/link";
@@ -62,64 +61,18 @@ function BasicUsage() {
           <DrawerBody>
             <Flex flexDirection="column" mt="100px">
               <Link href="/About">
-                <a
-                  style={{
-                    fontSize: "14px",
-                    fontWeight: "600",
-                    lineHeight: "19.6px",
-                    letterSpacing: "0.03em",
-                    color: "#fff",
-                    textTransform: "uppercase",
-                    marginBottom: "70px",
-                  }}
-                >
-                  About
-                </a>
+                <a className={`${"nav_link"} ${"nav_list"}`}>About</a>
               </Link>
               <Link href="/Available Tokens">
-                <a
-                  style={{
-                    fontSize: "14px",
-                    fontWeight: "600",
-                    lineHeight: "19.6px",
-                    letterSpacing: "0.03em",
-                    color: "#fff",
-                    textTransform: "uppercase",
-                    marginBottom: "70px",
-                  }}
-                >
+                <a className={`${"nav_link"} ${"nav_list"}`}>
                   Available Tokens
                 </a>
               </Link>
               <Link href="/How to purchase">
-                <a
-                  style={{
-                    fontSize: "14px",
-                    fontWeight: "600",
-                    lineHeight: "19.6px",
-                    letterSpacing: "0.03em",
-                    color: "#fff",
-                    textTransform: "uppercase",
-                    marginBottom: "70px",
-                  }}
-                >
-                  How to purchase
-                </a>
+                <a className={`${"nav_link"} ${"nav_list"}`}>How to purchase</a>
               </Link>
               <Link href="/How to start">
-                <a
-                  style={{
-                    fontSize: "14px",
-                    fontWeight: "600",
-                    lineHeight: "19.6px",
-                    letterSpacing: "0.03em",
-                    color: "#fff",
-                    textTransform: "uppercase",
-                    marginBottom: "70px",
-                  }}
-                >
-                  How to start
-                </a>
+                <a className={`${"nav_link"} ${"nav_list"}`}>How to start</a>
               </Link>
             </Flex>
             <Button

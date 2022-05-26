@@ -24,61 +24,16 @@ const Navbar = () => {
           justifyContent="space-between"
         >
           <Link href="/About">
-            <a
-              className="nav_link"
-              style={{
-                fontSize: "14px",
-                fontWeight: "600",
-                lineHeight: "19.6px",
-                letterSpacing: "0.03em",
-                color: "#fff",
-                textTransform: "uppercase",
-              }}
-            >
-              About
-            </a>
+            <a className="nav_link">About</a>
           </Link>
           <Link href="/Available Tokens">
-            <a
-              style={{
-                fontSize: "14px",
-                fontWeight: "600",
-                lineHeight: "19.6px",
-                letterSpacing: "0.03em",
-                color: "#fff",
-                textTransform: "uppercase",
-              }}
-            >
-              Available Tokens
-            </a>
+            <a className="nav_link">Available Tokens</a>
           </Link>
           <Link href="/How to purchase">
-            <a
-              style={{
-                fontSize: "14px",
-                fontWeight: "600",
-                lineHeight: "19.6px",
-                letterSpacing: "0.03em",
-                color: "#fff",
-                textTransform: "uppercase",
-              }}
-            >
-              How to purchase
-            </a>
+            <a className="nav_link">How to purchase</a>
           </Link>
           <Link href="/How to start">
-            <a
-              style={{
-                fontSize: "14px",
-                fontWeight: "600",
-                lineHeight: "19.6px",
-                letterSpacing: "0.03em",
-                color: "#fff",
-                textTransform: "uppercase",
-              }}
-            >
-              How to start
-            </a>
+            <a className="nav_link">How to start</a>
           </Link>
         </Flex>
         <Button

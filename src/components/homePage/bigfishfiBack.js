@@ -23,32 +23,13 @@ const BigfishfiBack = () => {
             >
               Is BigFishFi Giving Back?
             </Heading>
-            <Text
-              fontSize="18px"
-              lineHeight="28.8px"
-              fontWeight="400"
-              color="rgba(212, 210, 232, 1)"
-              mb="20px"
-            >
+            <Text className="fishBack_para">
               BigFishFi Token loves its Rainbow Snapper mascot (and all its sea
               pals). Our crew is actively seeking ways to help our beloved
               marine life and our beautiful oceans;
             </Text>
-            <Text
-              fontSize="18px"
-              lineHeight="28.8px"
-              fontWeight="400"
-              color="rgba(212, 210, 232, 1)"
-              mb="20px"
-            >
-              This inspired AzureWay.
-            </Text>
-            <Text
-              fontSize="18px"
-              lineHeight="28.8px"
-              fontWeight="400"
-              color="rgba(212, 210, 232, 1)"
-            >
+            <Text className="fishBack_para">This inspired AzureWay.</Text>
+            <Text className={`${"fishBack_para"} ${"fisfi_para"}`}>
               Joining #AzureWay is easy and just takes a few clicks. Join our
               movement today and start impacting change. Overfishing is one of
               the world&apos;s most pressing environmental issues.
@@ -58,24 +39,12 @@ const BigfishfiBack = () => {
             maxW={{ base: "100%", lg: "467px" }}
             pt={{ base: "30px", lg: "200px" }}
           >
-            <Text
-              fontSize="18px"
-              lineHeight="28.8px"
-              fontWeight="400"
-              color="rgba(212, 210, 232, 1)"
-              mb="20px"
-            >
+            <Text className="fishBack_para">
               We can help marine life maintain the Earth&apos;s temperature by
               minimising overfishing. Oceans are the planet&apos;s largest
               carbon sink.
             </Text>
-            <Text
-              fontSize="18px"
-              lineHeight="28.8px"
-              fontWeight="400"
-              color="rgba(212, 210, 232, 1)"
-              mb="30px"
-            >
+            <Text className="fishBack_para">
               AzureWay&apos;s purpose is to improve ocean governance through
               top-down and bottom-up approaches and to help local communities on
               the front lines of marine and environmental conservation.

@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Button,
-  Container,
-  Heading,
-  Text,
-  Image,
-  Flex,
-} from "@chakra-ui/react";
+import { Box, Button, Container, Text, Image, Flex } from "@chakra-ui/react";
 import Link from "next/link";
 
 const Footer = () => {
@@ -48,65 +40,16 @@ const Footer = () => {
             flexDirection={{ base: "column", lg: "row" }}
           >
             <Link href="/About">
-              <a
-                className="nav_link"
-                style={{
-                  fontSize: "14px",
-                  fontWeight: "600",
-                  lineHeight: "19.6px",
-                  letterSpacing: "0.03em",
-                  color: "#fff",
-                  textTransform: "uppercase",
-                  marginBottom: "50px",
-                }}
-              >
-                About
-              </a>
+              <a className={`${"nav_link"} ${"link_main"}`}>About</a>
             </Link>
             <Link href="/Available Tokens">
-              <a
-                style={{
-                  fontSize: "14px",
-                  fontWeight: "600",
-                  lineHeight: "19.6px",
-                  letterSpacing: "0.03em",
-                  color: "#fff",
-                  textTransform: "uppercase",
-                  marginBottom: "50px",
-                }}
-              >
-                Available Tokens
-              </a>
+              <a className={`${"nav_link"} ${"link_main"}`}>Available Tokens</a>
             </Link>
             <Link href="/How to purchase">
-              <a
-                style={{
-                  fontSize: "14px",
-                  fontWeight: "600",
-                  lineHeight: "19.6px",
-                  letterSpacing: "0.03em",
-                  color: "#fff",
-                  textTransform: "uppercase",
-                  marginBottom: "50px",
-                }}
-              >
-                How to purchase
-              </a>
+              <a className={`${"nav_link"} ${"link_main"}`}>How to purchase</a>
             </Link>
             <Link href="/How to start">
-              <a
-                style={{
-                  fontSize: "14px",
-                  fontWeight: "600",
-                  lineHeight: "19.6px",
-                  letterSpacing: "0.03em",
-                  color: "#fff",
-                  textTransform: "uppercase",
-                  marginBottom: "50px",
-                }}
-              >
-                How to start
-              </a>
+              <a className={`${"nav_link"} ${"link_main"}`}>How to start</a>
             </Link>
           </Flex>
           <Button
@@ -118,6 +61,7 @@ const Footer = () => {
             borderRadius="35px"
             lineHeight="28px"
             p="11px 44px"
+            mt={{ base: "10px", lg: "inherit" }}
             h="auto"
           >
             Log in
@@ -131,12 +75,7 @@ const Footer = () => {
           >
             <Image w="34px" h="34px" src="/icon/twitter.svg" alt="twitter" />
             <Image w="34px" h="34px" src="/icon/telegram.svg" alt="telegram" />
-            <Image
-              w="34px"
-              h="34px"
-              src="/icon/instagram.svg"
-              alt="instagram"
-            />
+            <Image w="34px" h="34px" src="/icon/instagram.svg" alt="instgrm" />
             <Image w="34px" h="34px" src="/icon/facebook.svg" alt="facebook" />
           </Flex>
           <Text

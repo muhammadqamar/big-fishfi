@@ -16,10 +16,24 @@ body {
   line-height: 82px;
 }
 
+@media (max-width: 768px) {
+  .top-heading {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
 .main-heading {
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 75px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .sub-heading-one {
@@ -31,6 +45,25 @@ body {
 .sub-heading-two {
   font-weight: 700;
   font-size: 20px;
+  line-height: 160%;
+}
+
+@media (max-width: 768px) {
+  .sub-heading-two {
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+.sub-heading-three {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+@media (max-width: 768px) {
+  .sub-heading-three {
+    font-size: 18px;
+  }
 }
 
 .para-text {
@@ -39,17 +72,79 @@ body {
   line-height: 160%;
 }
 
+@media (max-width: 768px) {
+  .para-text {
+    font-size: 16px;
+  }
+}
+
+/* Nav & Footer*/
+.nav_link {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.6px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  text-transform: uppercase;
+}
+.nav_list {
+  margin-bottom: 70px;
+}
+@media (max-width: 992px) {
+  .link_main {
+    margin-bottom: 50px;
+  }
+}
+
+/*fishfi_Section*/
+.fishBack_para {
+  font-size: 18px;
+  line-height: 28.8px;
+  font-weight: 400;
+  color: rgba(212, 210, 232, 1);
+  margin-bottom: 20px;
+}
+.fisfi_para {
+  margin-bottom: 0;
+}
 .info-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
 }
-.nav_link {
-  font-size: "14px";
-  font-weight: "600";
-  line-height: "19.6px";
-  letter-spacing: "0.03em";
-  color: "#fff";
-  text-transform: "uppercase";
-  margin-bottom: "50px";
+
+.btn {
+  min-width: 214px !important;
+  height: 65px !important;
+  color: #594318 !important;
+  background: linear-gradient(
+    234.39deg,
+    #ecd792 -24.67%,
+    #eec867 47.71%,
+    #daad42 97.67%
+  ) !important;
+  /* gold */
+
+  box-shadow: 0px 15px 35px rgba(232, 208, 136, 0.2) !important;
+  border-radius: 35px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+}
+
+.nmb-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(
+    234.39deg,
+    #ecd792 -24.67%,
+    #eec867 47.71%,
+    #daad42 97.67%
+  );
+  /* gold */
+
+  box-shadow: 0px 15px 35px rgba(232, 208, 136, 0.2);
 }
