@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <Box
       w="100%"
-      minH={{ base: "586px", lg: "500.63px" }}
+      minH={{ base: "586px", lg: "205px", xl: "500.63px" }}
       bgImage={"/footer-bg.svg"}
       bgRepeat="no-repeat"
       bgPosition={{ base: "bottom", xl: "center 22px" }}
