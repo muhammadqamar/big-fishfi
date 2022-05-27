@@ -51,7 +51,7 @@ const Navbar = () => {
           p="11px 44px"
           h="auto"
         >
-          Log in
+          Buy Presale
         </Button>
         <Box display={{ base: "inherit", lg: "none" }}>
           <NavMenu />

@@ -85,7 +85,7 @@ function BasicUsage() {
               p="11px 44px"
               h="auto"
             >
-              Log in
+              Buy Presale
             </Button>
           </DrawerBody>
         </DrawerContent>

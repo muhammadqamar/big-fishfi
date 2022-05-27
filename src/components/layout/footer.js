@@ -92,7 +92,7 @@ const Footer = () => {
             mt={{ base: "10px", lg: "inherit" }}
             h="auto"
           >
-            Log in
+            Buy Presale
           </Button>
         </Container>
         <Box w="100%">
