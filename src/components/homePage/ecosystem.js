@@ -3,6 +3,7 @@ import { Box, Container, Flex, Text, Img, Button } from "@chakra-ui/react";
 const Ecosystem = () => {
   return (
     <Box
+      id="About"
       w="100%"
       h={{ base: "1000px", lg: "680px" }}
       bg="#0008BF"
@@ -21,7 +22,11 @@ const Ecosystem = () => {
         <Container
           maxW="1440px"
           m="auto"
-          p={{ base: "50px 20px 55px", md: "93px 50px 60.7px  ", xl: "93px 140px 60.7px " }}
+          p={{
+            base: "50px 20px 55px",
+            md: "93px 50px 60.7px  ",
+            xl: "93px 140px 60.7px ",
+          }}
         >
           <Flex
             justify="space-between"
@@ -66,11 +71,12 @@ const Ecosystem = () => {
                   p={{ base: "27px 30px 26px", md: "40px 45px 44px 40px" }}
                 >
                   <Text className="para-text" color="#D4D2E8">
-                    BigFishFi Token has always taken a unique approach to problem solving from the
-                    very beginning.
-                    <br /> Our company&apos;s founder, Ona Nyksund, began with a supply of one
-                    trillion tokens. <br />
-                    <br /> We are here to enable seamless community-based, true decentralisation.
+                    BigFishFi Token has always taken a unique approach to
+                    problem solving from the very beginning.
+                    <br /> Our company&apos;s founder, Ona Nyksund, began with a
+                    supply of one trillion tokens. <br />
+                    <br /> We are here to enable seamless community-based, true
+                    decentralisation.
                   </Text>
                 </Box>
               </Box>

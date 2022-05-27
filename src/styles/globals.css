@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   background-color: #151840 !important;
@@ -79,6 +80,13 @@ body {
 }
 
 /* Nav & Footer*/
+
+.nav_sticky {
+  background: rgba(47, 38, 91, 1);
+  box-shadow: 0px 15px 35px rgba(232, 208, 136, 0.2);
+  top: 0;
+  position: sticky !important;
+}
 .nav_link {
   font-size: 14px;
   font-weight: 600;
@@ -127,7 +135,12 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background: linear-gradient(234.39deg, #ecd792 -24.67%, #eec867 47.71%, #daad42 97.67%);
+  background: linear-gradient(
+    234.39deg,
+    #ecd792 -24.67%,
+    #eec867 47.71%,
+    #daad42 97.67%
+  );
   /* gold */
 
   box-shadow: 0px 15px 35px rgba(232, 208, 136, 0.2);

@@ -53,27 +53,30 @@ const Footer = () => {
           flexWrap="wrap"
           p="0"
         >
-          <Image
-            width={{ base: "208px", sm: "141px" }}
-            src="/icon/nav_logo.svg"
-            alt="logo"
-            marginBottom={{ base: "50px", lg: "0" }}
-          />
+          <Link href="#home">
+            <Image
+              width={{ base: "208px", sm: "141px" }}
+              src="/icon/nav_logo.svg"
+              alt="logo"
+              cursor="pointer"
+              marginBottom={{ base: "50px", lg: "0" }}
+            />
+          </Link>
           <Flex
             minW={{ base: "100%", lg: "625px" }}
             justifyContent="space-between"
             flexDirection={{ base: "column", lg: "row" }}
           >
-            <Link href="/About">
+            <Link href="#About">
               <a className={`${"nav_link"} ${"link_main"}`}>About</a>
             </Link>
-            <Link href="/Available Tokens">
+            <Link href="#Available-Tokens">
               <a className={`${"nav_link"} ${"link_main"}`}>Available Tokens</a>
             </Link>
-            <Link href="/How to purchase">
+            <Link href="#How-to-purchase">
               <a className={`${"nav_link"} ${"link_main"}`}>How to purchase</a>
             </Link>
-            <Link href="/How to start">
+            <Link href="#How-to-start">
               <a className={`${"nav_link"} ${"link_main"}`}>How to start</a>
             </Link>
           </Flex>

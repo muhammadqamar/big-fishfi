@@ -6,7 +6,13 @@ import { startedData } from "../dummyData";
 
 const Purchase = () => {
   return (
-    <Box w="100%" minH="2346px" pos="relative" mb={{ base: "480px", md: "0" }}>
+    <Box
+      id="How-to-purchase"
+      w="100%"
+      minH="2346px"
+      pos="relative"
+      mb={{ base: "480px", md: "0" }}
+    >
       <Box
         w="100%"
         h="646px"
@@ -35,21 +41,28 @@ const Purchase = () => {
             justify="space-between"
             flexDirection={{ base: "column", md: "row" }}
             alignItems="center"
-            p={{ base: "50px 20px 55px", md: "93px 20px 60.7px", xl: "77px 120.9px 87.11px 140px" }}
+            p={{
+              base: "50px 20px 55px",
+              md: "93px 20px 60.7px",
+              xl: "77px 120.9px 87.11px 140px",
+            }}
           >
             <Box maxW="583px" mb={{ base: "20px", md: "0" }}>
               <Text className="sub-heading-one" mb="30px" color="#FFFFFF">
                 How Do I Purchase?
               </Text>
               <Text className="para-text" color="#D4D2E8">
-                The most reliable marketplace for buying and selling BIIG and SCOUR is our
-                MegaloSwap platform; however, these items are also available on Uniswap (UNI) and
-                PancakeSwap (CAKE). It is important to take into consideration that, apart from
-                MegaloSwap, exchanges that support one might not support the other.
-                <br /> <br /> Because BIIG is a decentralised experiment, we make it a point to
-                encourage the use of DEXs whenever possible. If you decide to use a CEX instead, you
-                should make sure to do some research on it beforehand to ensure that it is
-                absolutely safe and secure for your capital.
+                The most reliable marketplace for buying and selling BIIG and
+                SCOUR is our MegaloSwap platform; however, these items are also
+                available on Uniswap (UNI) and PancakeSwap (CAKE). It is
+                important to take into consideration that, apart from
+                MegaloSwap, exchanges that support one might not support the
+                other.
+                <br /> <br /> Because BIIG is a decentralised experiment, we
+                make it a point to encourage the use of DEXs whenever possible.
+                If you decide to use a CEX instead, you should make sure to do
+                some research on it beforehand to ensure that it is absolutely
+                safe and secure for your capital.
               </Text>
             </Box>
 
@@ -64,8 +77,20 @@ const Purchase = () => {
 
           {/* section  Two*/}
 
-          <Box p={{ base: "0 20px 55px", md: "0 20px 60.7px", xl: "0px 140px 217.33px 112px" }}>
-            <Text className="sub-heading-one" mb="40px" color="#FFFFFF" pl="30px">
+          <Box
+            id="How-to-start"
+            p={{
+              base: "0 20px 55px",
+              md: "0 20px 60.7px",
+              xl: "0px 140px 217.33px 112px",
+            }}
+          >
+            <Text
+              className="sub-heading-one"
+              mb="40px"
+              color="#FFFFFF"
+              pl="30px"
+            >
               How Do I Get Started?
             </Text>
 

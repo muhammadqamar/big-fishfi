@@ -4,7 +4,7 @@ import Link from "next/link";
 import NavMenu from "../layout/mobileMenu";
 const Navbar = () => {
   return (
-    <Box w="100%" bg="rgba(47, 38, 91, 1)">
+    <Box w="100%" bg="rgba(47, 38, 91, 1)" className="nav_sticky" zIndex="999">
       <Container
         maxW="1440px"
         p={{ base: "25px 20px", md: "20px 30px", xl: "20px  140px" }}
@@ -13,18 +13,29 @@ const Navbar = () => {
         alignItems="center"
         justifyContent="space-between"
       >
-        <Image width={{ base: "208px", sm: "141px" }} src="/icon/nav_logo.svg" alt="logo" />
-        <Flex display={{ base: "none", lg: "inherit" }} minW="625px" justifyContent="space-between">
-          <Link href="/About">
+        <Link href="#home">
+          <Image
+            width={{ base: "208px", sm: "141px" }}
+            src="/icon/nav_logo.svg"
+            alt="logo"
+            cursor="pointer"
+          />
+        </Link>
+        <Flex
+          display={{ base: "none", lg: "inherit" }}
+          minW="625px"
+          justifyContent="space-between"
+        >
+          <Link href="#About">
             <a className="nav_link">About</a>
           </Link>
-          <Link href="/Available Tokens">
+          <Link href="#Available-Tokens">
             <a className="nav_link">Available Tokens</a>
           </Link>
-          <Link href="/How to purchase">
+          <Link href="#How-to-purchase">
             <a className="nav_link">How to purchase</a>
           </Link>
-          <Link href="/How to start">
+          <Link href="#How-to-start">
             <a className="nav_link">How to start</a>
           </Link>
         </Flex>

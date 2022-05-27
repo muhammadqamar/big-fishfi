@@ -19,8 +19,17 @@ const card = [
 ];
 const Tokens = () => {
   return (
-    <Box maxW="1440px" p={{ base: "25px 20px", md: "20px 30px", xl: "20px  140px" }} m="auto">
-      <Text maxW="494px" className="sub-heading-one" color="rgba(255, 255, 255, 1)">
+    <Box
+      id="Available-Tokens"
+      maxW="1440px"
+      p={{ base: "25px 20px", md: "20px 30px", xl: "20px  140px" }}
+      m="auto"
+    >
+      <Text
+        maxW="494px"
+        className="sub-heading-one"
+        color="rgba(255, 255, 255, 1)"
+      >
         What Are The Available Tokens?
       </Text>
       <Flex
@@ -28,7 +37,7 @@ const Tokens = () => {
         flexDirection={{ base: "column", lg: "inherit" }}
         mt={{ base: "inherit", lg: "50px" }}
       >
-        {card.map((item, count) => (
+        {card.map((item, index, count) => (
           <Box
             w={{ base: "100%", lg: "367px" }}
             minH={{ base: "428px", lg: "549px" }}
@@ -38,6 +47,8 @@ const Tokens = () => {
             borderRadius="20px"
             bg="#2F265B"
             mt={{ base: "50px", lg: "0" }}
+            ml={{ base: index === 1 && "0", lg: index === 1 && "14px" }}
+            mr={{ base: index === 1 && "0", lg: index === 1 && "14px" }}
             key={count}
           >
             <Flex
